@@ -6,17 +6,28 @@ class employe{
 
    public :
     
-     int age; 
-      string gender ;
+     int Age; 
+      string Gender ;
         
-       string name; 
+       string Name; 
         
     void print(){
      
- cout<<"My name is- "<<name<<endl<<"age is- "<<age<<endl<<"gender - "<<gender;
+ cout<<"My name is- "<<Name<<endl<<"age is- "<<Age<<endl<<"gender - "<<Gender;
   
 
     }    
+
+    
+
+    employe ( string name , string gender  , int age ){
+  
+  Name = name; 
+   Age= age ;
+   Gender = gender;
+          
+
+    }
 
 
 
@@ -24,12 +35,8 @@ class employe{
 
 int main (){
 
-employe emp ;
+employe emp = employe( "brijesh" , " male" , 22);
  
- emp.name = "brijesh";
-   emp.age = 22; 
-    emp.gender = "male";
-     
      emp.print();
       
 
